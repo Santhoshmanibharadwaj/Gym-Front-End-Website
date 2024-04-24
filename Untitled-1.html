@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Textbox Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+        input[type=text] {
+            width: 15%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Textbox Validation</h1>
+    <form method="post" action="">
+        <label>Enter your name</label><br>
+        <input type="text" name="name" maxlength="15" required><br>
+    <form method="post" action="">
+        <label>Enter address</label><br>
+        <input type="text" name="name" maxlength="15" required><br>
+    <form method="post" action="">
+        <label>comment</label><br>
+        <input type="text" name="name" maxlength="15" required><br>
+    
+        <span class="error"><?php echo $nameErr;?></span><br><br>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+    <?php
+    if(isset($_POST["submit"])){
+        if (empty($_POST["name"])) {
+            $nameErr = "Name is required";
+          } else {
+            $name
+          </body>
+          </html>
